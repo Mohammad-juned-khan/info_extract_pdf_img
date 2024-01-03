@@ -2,8 +2,8 @@ streamlit
 google-generativeai
 python-dotenv
 langchain
+PyMuPDF
 PyPDF2
 chromadb
 faiss-cpu
-fitz
-PyMuPDF
+
