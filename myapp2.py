@@ -6,7 +6,7 @@ import pathlib
 import textwrap
 from PIL import Image
 import google.generativeai as genai
-import PyMuPDF
+# import PyMuPDF
 import fitz  # PyMuPDF
 import base64
 from io import BytesIO
