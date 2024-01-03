@@ -121,6 +121,7 @@ if uploaded_file is not None:
             image = Image.open(uploaded_file)
             st.image(image, caption="Uploaded Image", use_column_width=True)
             st.success("Image file uploaded successfully!")
+            image_parts_c = input_image_setup(uploaded_file)
             # st.write(uploaded_file.type)
         else:
             st.error("Unsupported file format. Please upload a PDF or an image.")
