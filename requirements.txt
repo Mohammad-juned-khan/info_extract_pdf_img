@@ -2,7 +2,7 @@ streamlit
 google-generativeai
 python-dotenv
 langchain
-PyMuPDF==1.18.16
+PyMuPDF
 PyPDF2
 chromadb
 faiss-cpu
