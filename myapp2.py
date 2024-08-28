@@ -92,7 +92,7 @@ st.sidebar.title("Powered by Moreyeahs INC")
 st.sidebar.write("Extract information From Image")
 st.sidebar.write("Juned.khan@moreyeahs.in") 
 st.sidebar.write("https://www.moreyeahs.com")
-st.header("SallingUp Report Summary")
+st.header("Report Summary")
 input=st.text_input("What you want to extract: ",key="input")
 uploaded_file = st.file_uploader("Choose an image...", type=["pdf","jpg", "jpeg", "png"])
 image="" 
