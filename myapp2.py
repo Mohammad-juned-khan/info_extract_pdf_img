@@ -15,12 +15,12 @@ from dotenv import load_dotenv
 # genai.configure(api_key='AIzaSyAku0AUb-InsJlac_4HXxgAoDbyIQ9J0dM')
 # os.getenv("GOOGLE_API_KEY")
 # genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-genai.configure(api_key='AIzaSyAku0AUb-InsJlac_4HXxgAoDbyIQ9J0dM')
+genai.configure(api_key='AIzaSyBefMFEStxc82vEXk0rC4o1p-V2KeArLnU')
 
 ## Function to load 
 
 def get_gemini_response(input,image,prompt):
-    model = genai.GenerativeModel('gemini-pro-vision')
+    model = genai.GenerativeModel('gemini-1.5-flash')
     response = model.generate_content([input,image[0],prompt])
     return response.text
     
@@ -92,7 +92,7 @@ st.sidebar.title("Powered by Moreyeahs INC")
 st.sidebar.write("Extract information From Image")
 st.sidebar.write("Juned.khan@moreyeahs.in") 
 st.sidebar.write("https://www.moreyeahs.com")
-st.header("Information extractor application")
+st.header("SallingUp Report Summary")
 input=st.text_input("What you want to extract: ",key="input")
 uploaded_file = st.file_uploader("Choose an image...", type=["pdf","jpg", "jpeg", "png"])
 image="" 
